@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<body>
+<link rel="stylesheet" type="text/css" href="..\css\stil.css">
+<img src="..\assets/logo.png" width="100" height="70" alt="Web Sitesi Logosu" />
+<div class="fh5co-col-1">
+					<div class="row">
+				<div class="col-md-8 col-md-push-6 fh5co-heading">
+					<h1  align="center"><font color="red">JAVASCRİPT STİNRGLER, SAYILAR, DİZİ VE DİZİ DEĞİŞKENLERİ</font></h1>
+					<body background="arkaplan1.png">
+					<div style="text-align:center">
+					<br>
+					<h2 ><font color="red">JavaScript String Veri Türü</font></h2>
+					
+					<p><font face="tahoma" size="4" color="black"><b>JavaScript string veri türü, metinleri saklamak ve üzerinde işlem yapmak için kullanılır.</b></font></p>
+					<p><font face="tahoma" size="4" color="black"><b>Bir JavaScript string, basitçe bir grup karakteri saklamaya yarar. "Sibel", "Sibel Adem", "Bu web sitesi bana aittir", "volvo26" birer string örnekleridir.</b></font></p>
+					<p><font face="tahoma" size="4" color="black"><b>Bir string türündeki bir değişkene değer atarken string ifade tırnak içinde yazılmalıdır.</b></font></p>
+					<p><font face="tahoma" size="4" color="black"><b>Bu tırnak işareti tek veya çift olabilir.</b></font></p>
+					<img src="..\assets/string1.PNG" width="300">
+					<p><font face="tahoma" size="4" color="black"><b>Bir string değişkene değer atarken, metnin içinde tek tırnak veya çift tırnak olmadığı müddetçe istediğiniz uzunlukta veri girebilirsiniz.</b></font></p>
+					<p><font face="tahoma" size="4" color="black"><b>Eğer metin içinde  string yapısını bozacak tek tırnak veya çift tırnak varsa buna özel önlem almanız gerekir.</b></font></p>
+					<p><font face="tahoma" size="4" color="black"><b>Bir metinde string yapısını bozacak tek tırnak veya çift tırnak varsa o zaman JavaScript kaçış işaretini kullanmalısınız.</b></font></p>
+					<p><font face="tahoma" size="4" color="black"><b>Kaçış işareti \ işaretidir.</b></font></p>
+					<p><font face="tahoma" size="4" color="black"><b>Bir örnek verecek olursak;</b></font></p>
+					<img src="..\assets/string2.PNG" width="800" height="300">
+					<br>
+					<h2 ><font color="black">String Length (Stringin uzunluğu)</font></h2>
+					
+					<p><font face="tahoma" size="4" color="black"><b>String yerleşik olarak bazı özelliklere sahiptir. length bunlardan biridir ve stringin uzunluğunu verir.</b></font></p>
+					<img src="..\assets/string3.PNG" width="800" height="300">
+					<br>
+					<h2 ><font color="red">JavaScript String Metodları</font></h2>
+					
+					<p><font face="tahoma" size="4" color="black"><b>String metodları, string türü veriler üzerinde işlem yaparken faydalandığımız metodlardır.<b></font></p>
+					<p><font face="tahoma" size="4" color="black"><b>Normalde String ilkel bir türdür ve ilke türlerde özellik ve metodlar olmaz. Nesnelerin özellikleri ve metodları olur.</b></font></p>
+					<p><font face="tahoma" size="4" color="black"><b>Fakat JavaScript ilkel değerler için de metod ve özelliklere sahiptir. Çünkü JavaScript ilkel değerleri işlerken bunlara nesne gibi davranır.</b></font></p>
+					<br>
+					<h2 ><font color="red">JavaScript String indexOf() ve lastIndexOf() Metodu</font></h2>
+					
+					<p><font face="tahoma" size="4" color="black"><b>Bir string içindeki bir karakterin ya da metnin bir parçasının sıra numarasını (index) bulmak için indexOf metodu kullanılır.</b></font></p>
+					<p><font face="tahoma" size="4" color="black"><b>indexOf metodu kendine verilen karakteri ya da kelimeyi metnin içinde arar ve bulduğu ilk değerin sıra numarasını verir.<b></font></p>
+					<p><font face="tahoma" size="4" color="black"><b>Sıra numarası yani index string işlemlerinde çokca kullanılan bir özelliktir.</b></font></p>
+					<img src="..\assets/string4.PNG" width="800" height="300">
+					<p><font face="tahoma" size="4" color="black"><b>lastIndexOf metodu kendine verilen karakteri ya da kelimeyi metnin içinde arar ve bulduğu son değerin sıra numarasını verir.</b></font></p>
+					<img src="..\assets/string5.PNG" width="800" height="300">
+					<p><font face="tahoma" size="4" color="black"><b>indexOf ve  lastIndexOf metodu, kendine verilen değeri metin içinde bulamazsa geriye -1  döndürür.</b></font></p>
+					<p><font face="tahoma" size="4" color="black"><b>Bunun anlamı değer bulunamadı demektir.<b></font></p>
+					<p><font face="tahoma" size="4" color="black"><b>Şunu unutmamalıyız ki JavaScript saymaya 0'dan başlar.</b></font></p>
+					<p><font face="tahoma" size="4" color="black"><b>Her iki metod içinde aramamaya başlanılacak başlangıç numarası verilebilir.Yani diyebilirsinizki "aramaya 10. karakterden sonra başla".Bunu metoda ikinci bir parametre vererek yaparız.</b></font></p>
+					<img src="..\assets/string6.PNG" width="800" height="300">
+					<p><font face="tahoma" size="4" color="black"><b>Metnin içinde kelime aramak için ayrıca search() metodu vardır. Bu metod indexOf ile aynı çalışır ama search() metodu çok daha güçlüdür.</b></font></p>
+					<br>
+					<h2 ><font color="red">String'i parçalara ayırma</font></h2>
+					
+					<p><font face="tahoma" size="4" color="black"><b>JavaScript ile çoğu zaman metinler üzerinde işlemler yaparız.Bazen bir metnin içinde kelime arar bazen de metnin içinden belirli bir bölümü çıkartmak isteriz.<b></font></p>
+					<p><font face="tahoma" size="4" color="black"><b>JavaScript bu tür metin işlemleri için bize 3 metod sunar:</b></font></p>
+					<p><font face="tahoma" size="4" color="black"><b>1-slice(başlangıç, bitiş)</b></font></p>
+					<p><font face="tahoma" size="4" color="black"><b>2-substring(başlangıç, bitiş)</b></font></p>
+					<p><font face="tahoma" size="4" color="black"><b>3-substr(başlangıç, bitiş)<b></font></p>
+					<p><font face="tahoma" size="4" color="black"><b>Bu metodlar ile metinler üzerinde ayrıştırma işlemleri gerçekleştirilir.</b></font></p>
+					<br>
+					<h2 ><font color="red">JavaScript string slice() Metodu</font></h2>
+					
+					<p><font face="tahoma" size="4" color="black"><b>slice() metodu string içinden belirli bir bölümü çıkartmaya yarar.</b></font></p>
+					<p><font face="tahoma" size="4" color="black"><b>JavaScript string slice() metodu iki parametre alır: ilk parametre başlama indeksi, ikinci parametre bitiş indeksidir.</b></font></p>
+					<p><font face="tahoma" size="4" color="black"><b>Bu iki indeks numarası arasındaki bölüm metnin içinden çıkartılır ve yeni bir string değer olarak döndürülür:<b></font></p>
+					<img src="..\assets/string7.PNG" width="800" height="300">
+					<p><font face="tahoma" size="4" color="black"><b>Eğer parametre değerlerini negatif verirseniz o zaman parçalama işlemi metnin sonundan başlayacaktır.</b></font></p>
+					<p><font face="tahoma" size="4" color="black"><b>Aşağıdaki örnekte, işlem sağdan sola 11 karakter ilerleyecek ve kesmeye başlayacaktır. Kesme işlemi yine sağdan indeksi 6 olan karaktere kadar devam edecek ve iki indeks arasında kalan metin alınacaktır.</b></font></p>
+					<img src="..\assets/string8.PNG" width="800" height="300">
+					<br>
+					<h2 ><font color="red">JavaScript string substring() Metodu</font></h2>  
+					
+					<p><font face="tahoma" size="4" color="black"><b>substring() bir önceki yöntem olan slice() ile benzerdir.</b></font></p>
+					<p><font face="tahoma" size="4" color="black"><b>İki metod arasındaki fark substring() metodu negatif değer almaz.<b></font></p>
+					<img src="..\assets/string9.PNG" width="800" height="300">
+					<p><font face="tahoma" size="4" color="black"><b>Eğer ilk parametreyi atlarsanız, parametreyi başlangıç indeksi olarak alacaktır.</b></font></p>
+					
+					<br>
+					<h2 ><font color="red">JavaScript string substr() Metodu</font></h2>
+					
+					<p><font face="tahoma" size="4" color="black"><b>substr() metodu slice() metodu ile benzerdir.</b></font></p>
+					<p><font face="tahoma" size="4" color="black"><b>İkisi arasındaki fark, substr() metodunun ikinci alacağı parametre çıkartılacak metnin uzunluğunu belirtir.</b></font></p>
+					<img src="..\assets/string10.PNG" width="800" height="300">
+					<p><font face="tahoma" size="4" color="black"><b>Eğer ilk parametre negatif olursa, başlama pozisyonu metnin sonundan hesaplanır.İkinci parametre negatif olamaz.İkinci parametre atlanırsa, başlangıç indeksinden sonraki tüm metin alınır.<b></font></p>
+					<br>
+					<h2 ><font color="red">JavaScript String replace() Metodu</font></h2>
+					
+					<p><font face="tahoma" size="4" color="black"><b>replace() metodu ile bir metnin içinde arama yapıp, bulduğumuz değerleri yine istediğimiz bir değer ile değiştirebiliriz.Varsayılan olarak JavaScript string replace() metodu, sadece ilk bulduğu değeri değiştirir.</b></font></p>
+					<img src="..\assets/string11.PNG" width="650" height="300">			<img src="..\assets/string12.PNG" width="650" height="300">
+					<p><font face="tahoma" size="4" color="black"><b>Yukarıdaki örnekte "javascript" değeri "JavaScript" ile değiştirilecektir.</b></font></p>
+					<p><font face="tahoma" size="4" color="black"><b>Eğer metnin içinde birden fazla "javascript" varsa ve tümünü değiştirmek istersek o zaman regular expression yani düzenli ifadelerden yararlanmamız lazım.<b></font></p>
+					<img src="..\assets/string13.PNG" width="650" height="300">				<img src="..\assets/string14.PNG" width="650" height="300">
+					<br>
+					<h2 ><font color="red">JavaScript ile Metni Büyük Harf veya Küçük Harfe Çevirme (toUpperCase() ve toLowerCase() metodu)</font></h2>
+					
+					<p><font face="tahoma" size="4" color="black"><b>Eğer bir metni tamamen büyük harfe çevirmek isterseniz JavaScript string toUpperCase() metodunu kullanabilirsiniz.</b></font></p>
+					<img src="..\assets/string15.PNG" width="650" height="300">			<img src="..\assets/string16.PNG" width="650" height="300">	
+					
+					
+					<p><font face="tahoma" size="4" color="black"><b>Eğer bir metni tamamen küçük harfe çevirmek isterseniz JavaScript string toLowerCase() metodunu kullanabilirsiniz:</b></font></p>
+					<img src="..\assets/string17.PNG" width="650" height="300">			<img src="..\assets/string18.PNG" width="650" height="300">	
+					<br>
+					<h2 ><font color="red">JavaScript String concat() Metodu</font></h2>
+					
+					<p><font face="tahoma" size="4" color="black"><b>concat() metodu iki veya daha fazla stringi birleştirmeye yarar.<b></font></p>
+					<p><font face="tahoma" size="4" color="black"><b>Daha önceden string birleştirme için + operatörünü kullanmıştık. concat() de aynı işlevi görür.</b></font></p>
+					<img src="..\assets/string19.PNG" width="650" height="300">		
+					<br>
+					<h2 ><font color="red">JavaScript String split() Metodu</font></h2>
+					
+					<p><font face="tahoma" size="4" color="black"><b>Elinizde bir ayırıcı ile ayrılmış veri varsa bunu parçalara bölmek, bir diziye aktarmak isteyebilirsiniz.</b></font></p>
+					<p><font face="tahoma" size="4" color="black"><b>Örneğin mart, nisan, mayıs şeklinde virgül ile ayrılmış verimiz olsun.<b></font></p>
+					<p><font face="tahoma" size="4" color="black"><b>JavaScript string split() metonu ile bu veriyi ayrıştırmak ve ayları bir diziye yerleştirmek mümkündür.</b></font></p>
+					<img src="..\assets/string20.PNG" width="650" height="300">	
+					<p><font face="tahoma" size="4" color="black"><b>Bu şekilde belirli bir ayıraç ile gelen veriyi kolayca parçayalabilir, daha düzenli veri elde edebiliriz.</b></font></p>
+					<br>
+					<h2 ><font color="red">JavaScript Sayılar</font></h2>
+					
+					<p><font face="tahoma" size="4" color="black"><b>Farklı programlama dillerinde farklı sayı türleri vardır.
+					Örneğin C# dilinde int, int16, decimal gibi farklı türler vardır.
+					16 gibi bir sayıyı tutmak için int türü yeterli olurken, 3.15 gibi küsurlu değerleri tutmak için decimal kullanılır.
+					JavaScript programlama dilinde tek bir sayı türü vardır.<b></font></p>
+					<img src="..\assets/sayi1.PNG" width="300" >	
+					<p><font face="tahoma" size="4" color="black"><b>Çok büyük veya çok küçük sayılar bilimsel gösterim ile yazılabilir:</b></font></p>
+					<img src="..\assets/sayi2.PNG" width="300" >
+					<p><font face="tahoma" size="4" color="black"><b>JavaScript diğer programlama dillerinden farklı olarak, int, short, long gibi farklı sayı türleri tanımlamaz.
+					JavaScript sayıları her zaman 64-bit Floating Point (kayan nokta) olarak tutar.</b></font></p>
+					<br>
+					<h2 ><font color="red">JavaScript NaN Nedir? (Not a Number / Bir Sayı Değil)</font></h2>
+					
+					<p><font face="tahoma" size="4" color="black"><b>NaN kelimesi JavaScript için ayrılmış bir kelimedir.
+					Bir matematiksel işlemde sayı olmayan bir değer kullandığınızdasonuç NaN döner.</b></font></p>
+					<p><font face="tahoma" size="4" color="black"><b>Örneğin 100 / "armut" işleminin sonucu NaN'dır<b></font></p>
+					<img src="..\assets/sayi3.PNG" width="650" height="300">			<img src="..\assets/sayi4.PNG" width="650" height="300" >
+					<p><font face="tahoma" size="4" color="black"><b>İlk örnekte iki sayının bölümünün doğru şekilde yapıldığını görüyoruz.
+					Fakat ikinci örnekte bir sayı ve bir string ifadenin bölümü isteniyor bu da bizlere NaN sonucunu veriyor.<b></font></p>
+					<br>
+					<h2 ><font color="red">JavaScript Programlama Dilinde Sayılar Nesne Olabilir</font></h2>
+					
+					<p><font face="tahoma" size="4" color="black"><b>Daha önce stringde gördüğümüz gibi sayılar nesne olarak tanımlanabilir.
+					Normalde JavaScript sayıları ilkel değerlere sahiptir: 1,255, 5678 gibi.</b></font></p>
+					<p><font face="tahoma" size="4" color="black"><b>Fakat var sayiNesne= new Number(123); şeklinde nesne olarak tanımlanabilir.
+					Bu şekilde tanımlamak JavaScript'i yavaşlatır.</b></font></p>
+					<br>
+					<h2 ><font color="red">JavaScript Sayı Metodları</font></h2>
+					
+					<p><font face="tahoma" size="4" color="black"><b>JavaScript sayı metodları sayılarla çalışırken bize yardımcı olurlar.</b></font></p>
+					
+					<h2 ><font color="red">JavaScript toString() Metodu</font></h2>
+					
+					<p><font face="tahoma" size="4" color="black"><b>toString() metodu sayıyı stringe çevirir.<b></font></p>
+					<p><font face="tahoma" size="4" color="black"><b>Sayıları sadece sayısal işlemlerde kullanırız. 
+					Bunun dışında bir string ile sayısı işleyeceksek, sayısal değeri stringe çeviririz.<b></font></p>
+					<img src="..\assets/sayi5.PNG" width="650" height="300">
+					<br>
+					
+					<h2 ><font color="red">JavaScript toFixed() Metodu</font></h2>
+					
+					<p><font face="tahoma" size="4" color="black"><b>toFixed() metodu, belirtilen sayıda ondalık değere sahip string döndürür.</b></font></p>
+					<p><font face="tahoma" size="4" color="black"><b>Özellikle para gibi değerleri tutan değişkenlerde kullanılır.</b></font></p>
+					<img src="..\assets/sayi6.PNG" width="650" height="300">
+					
+					<h2 ><font color="red">JavaScript ToExponential () yöntemi</font></h2>
+					<p><font face="tahoma" size="4" color="black"><b>to Exponential (), üstel gösterim kullanılarak yuvarlanmış ve yazılmış bir sayı ile bir dize döndürür.</b></font></p>
+					<p><font face="tahoma" size="4" color="black"><b>Bir parametre ondalık noktanın arkasındaki karakter sayısını tanımlar:<b></font></p>
+					<img src="..\assets/sayi7.PNG" width="650" height="300">
+					
+					<br>
+					
+					<h2 ><font color="red">JavaScript toPrecision() Metodu</font></h2>
+					
+					<p><font face="tahoma" size="4" color="black"><b>JavaScript toPrecision(n) metodu uygulanan sayı, parentez içinde verilen değerden daha fazla tam sayı içeriyorsa bilimsel (üstel) gösterim ile döndürür:<b></font></p>
+					<p><font face="tahoma" size="4" color="black"><b>Örneğin: (312).toPrecision(2) 3.1e+2 sonucunu döndürür.</b></font></p>
+					<p><font face="tahoma" size="4" color="black"><b>Bilimsel gösterim, çok büyük veya küçük sayıları göstermek için kullanılan bir standarttır.
+					Bilimsel çalışmalarda çok büyük ve küçük sayılar kullanılır</b></font></p>
+					<p><font face="tahoma" size="4" color="black"><b>toPrecision(n) metodu daha çok ondalıklı işlemlerde kullanılır. Parantez içinde verilen sayı kadar basamağı size döndürür.</b></font></p>
+					<img src="..\assets/sayi8.PNG" width="650" height="300">
+					
+					<br>
+					
+					<h2 ><font color="red">JavaScript Bir Değişkeni Sayıya Çevirmek</font></h2>
+					
+					<p><font face="tahoma" size="4" color="black"><b>JavaScript programlama dilinle bir değişkeni sayıya çevirmek için 3 metod vardır:<b></font></p>
+					<p><font face="tahoma" size="4" color="black"><b>Number() metodu<b></font></p>
+					<p><font face="tahoma" size="4" color="black"><b>parseInt() metodu</b></font></p>
+					<p><font face="tahoma" size="4" color="black"><b>parseFloat() metodu</b></font></p><br>
+					<p><font face="tahoma" size="4" color="black"><b>Number() metodu JavaScript değişkenleri sayıya çevirmek için kulllanılır.</b></font></p>
+					<p><font face="tahoma" size="4" color="black"><b>parseInt() string değeri ayrıştırır, geriye tam sayı döndürür.<b></font></p>
+					<p><font face="tahoma" size="4" color="black"><b>parseInt() string değeri ayrıştırır, geriye tam sayı döndürür.<b></font></p>
+					<img src="..\assets/sayi9.PNG" width="650" height="300">		<img src="..\assets/sayi10.PNG" width="650" height="300">		<img src="..\assets/sayi11.PNG" width="1300" height="300">
+					<br>
+					
+					<h2 ><font color="red">JavaScript Diziler</font></h2>
+					
+					<p><font face="tahoma" size="4" color="black"><b>JavaScript dizileri birden fazla değeri tek bir değişkende depolamak için kullanılır.</b></font></p>
+					<img src="..\assets/dizi1.PNG" width="300">
+					<br>
+					
+					<h2 ><font color="red">Dizi nedir?</font></h2>
+					
+					<p><font face="tahoma" size="4" color="black"><b>Dizi özel bir çeşit değişkendir, tek seferde birden fazla değeri barındırabilir.
+					Eğer bir listeniz varsa (örneğin araba isimleri listesi), her bir araba ismini değişkenlerde şöyle saklayabilirdiniz: </b></font></p>
+					
+					<p><font face="tahoma" size="4" color="black"><b>var araba1 = "Saab";</b></font></p>
+					<p><font face="tahoma" size="4" color="black"><b>var araba2 = "Volvo";<b></font></p>
+					<p><font face="tahoma" size="4" color="black"><b>var araba3 = "BMW";</b></font></p>
+					<p><font face="tahoma" size="4" color="black"><b>Ancak, araba isimleri içinden tek bir tanesini bulmanız gerektiğinde ne yapacaktınız? Ve 3 tane değil de 300 araba ismi olsaydı?
+					Çözümü bir dizi kullanmak!
+					Bir dizi tek bir isim altında birden fazla değeri saklayabilir, ve siz de index numarası yardımıyla istediğiniz değere ulaşabilirsiniz.</b></font></p>
+					<br>
+					<h2 ><font color="red">Dizi Oluşturmak</font></h2>
+					
+					<p><font face="tahoma" size="4" color="black"><b>Bir JavaScript Dizisi oluşturmanın en kolay yolu köşeli parantezleri kullanmaktır.
+					Yazımı şu şekildedir:</b></font></p>
+					<p><font face="tahoma" size="4" color="black"><b>var dizi_ismi = [oge1, oge2, ...];  <b></font></p>
+					<br>
+					
+					<h2 ><font color="red">JavaScript "new" Anahtar Kelimesini Kullanmak</font></h2>
+					
+					<p><font face="tahoma" size="4" color="black"><b>Bu örnek bir dizi oluşturur ve içine değerler atar:</b></font></p>
+					<img src="..\assets/dizi2.PNG" width="800" height="300">
+					<br>
+					<h2 ><font color="red">Dizinin Elemanlarına Erişme</font></h2>
+					<p><font face="tahoma" size="4" color="black"><b>Dizi elemanlarına erişmek için dizideki index numaralarını kullanırız.</b></font></p>
+					<p><font face="tahoma" size="4" color="black"><b>dizi indexleri 0 dan başlar.</b></font></p>
+					<img src="..\assets/dizi3.PNG" width="800" height="300">
+					<br>
+					
+					<h2 ><font color="red">Dizi Elemanını Değiştirmek</font></h2>
+					<img src="..\assets/dizi4.PNG" width="300" >
+					<p><font face="tahoma" size="4" color="black"><b>Bu ifade belirtilen indexin elemanını değiştirir. <b></font></p>
+					<img src="..\assets/dizi5.PNG" width="800" height="300">
+					<br>
+					<h2 ><font color="red">Bütün Diziye Erişmek</font></h2>
+					<p><font face="tahoma" size="4" color="black"><b>JavaScript ile tüm diziye birden erişmek için sadece dizinin adını kullanmak yeterlidir.</b></font></p>
+					<img src="..\assets/dizi6.PNG" width="800" height="300">
+					<br>
+					
+					<h2 ><font color="red">Diziler Objedir</font></h2>
+					<p><font face="tahoma" size="4" color="black"><b>Diziler özel bir tür objedir. JavaScript typeof özelliği diziler için kullanıldığında geriye "object" değerini döndürür.
+					Ama JavaScript dizileri en iyi dizi olarak ifade edilebilirler.</b></font></p>
+					<p><font face="tahoma" size="4" color="black"><b>Diziler elemanlarına erişmek için numaraları kullanırlar. Bu örnekte insan[0], Ali değerini döndürür:</b></font></p>
+					<img src="..\assets/dizi7.PNG" width="800" height="300">
+					<p><font face="tahoma" size="4" color="black"><b>Objeler elemanlarına erişmek için isimleri kullanırlar. Bu örnekte, insan.ad geriye Ali değerini döndürür:<b></font></p>
+					<img src="..\assets/dizi8.PNG" width="800" height="300">
+					<br>
+					
+					<h2 ><font color="red">Dizi Elemanları Obje Olabilir</font></h2>
+					
+					<p><font face="tahoma" size="4" color="black"><b>JavaScript değişkenleri obje olabilir. Diziler özel bir çeşit objedir.
+					Bu yüzden, farklı türdeki değişkenleri aynı dizi içerisinde kullanabilirsiniz.
+					Dizi içerisinde objeleriniz olabilir. Dizi içerisinde fonksiyonlarınız olabilir. Dizi içerisinde diziniz de olabilir: </b></font></p>
+					<p><font face="tahoma" size="4" color="black"><b>yeniDizi[0] = Date.now;</b></font></p>
+					<p><font face="tahoma" size="4" color="black"><b>yeniDizi[1] = yeniFonksiyon;</b></font></p>
+					<p><font face="tahoma" size="4" color="black"><b>yeniDizi[2] = arabalar;</b></font></p>
+					<br>
+					
+					<h2 ><font color="red">Dizi Özellikleri ve Metodları</font></h2>
+					
+					<p><font face="tahoma" size="4" color="black"><b>JavaScript dizileri kullanmanın en büyük avantajı hazır olan dizi özelliklerini ve metodlarını kullanabilmektir:</b></font></p>
+					<img src="..\assets/dizi9.PNG" width="600" height="200">
+					<br>
+					
+					<h2 ><font color="red">Dizi İçinde Döngü Kullanmak</font></h2>
+					
+					<p><font face="tahoma" size="4" color="black"><b>Dizi içinde döngü kullanmanın en güvenli yolu for döngüsü kullanmaktır:</b></font></p>
+					<img src="..\assets/dizi10.PNG" width="800" height="300">
+					<p><font face="tahoma" size="4" color="black"><b>Ayrıca Array.forEach döngüsü de kullanabilirsiniz.</b></font></p>
+					<br>
+					
+					<h2 ><font color="red">Dizi Elemanı Eklemek</font></h2>
+					<p><font face="tahoma" size="4" color="black"><b>Diziye yeni bir eleman eklemenin en kolay yolu push metodu kullanmaktır:<b></font></p>
+					<img src="..\assets/dizi11.PNG" width="800" height="300">
+					<br>
+					
+					<h2 ><font color="red">İlişkisel Diziler</font></h2>
+					<p><font face="tahoma" size="4" color="black"><b>Birçok programlama dili, isimlendirilmiş indexli dizileri destekler.
+					İsimlendirilmiş indexli dizilere ilişkisel diziler denir.
+					JavaScript ilişkisel dizileri desteklemez.
+					JavaScript'te diziler yalnızca numaralı index kullanır.</b></font></p>
+					<img src="..\assets/dizi12.PNG" width="800" height="300">
+					<br>
+					
+					<h2 ><font color="red">new Array() Kullanımı</font></h2>
+					<p><font face="tahoma" size="4" color="black"><b>JavaScript'teki new Array() komutunu kullanmaya gerek yok.
+					Bunun yerine [] köşeli parantezleri kullanmalısınız.</b></font></p>
+					<p><font face="tahoma" size="4" color="black"><b>Aşağıdaki iki satır yeni dizi oluşturur.</b></font></p>
+					<img src="..\assets/dizi13.PNG" width="600" >
+					<p><font face="tahoma" size="4" color="black"><b>Bir örnek verecek olursak;<b></font></p>
+					<img src="..\assets/dizi14.PNG" width="800" height="300">
+					<br>
+					
+					<h2 ><font color="red">JavaScript Dizi Metodları</font></h2>
+					<h2 ><font color="red" size="3">Dizileri String'e Çevirmek</font></h2>
+					<p><font face="tahoma" size="4" color="black"><b>JavaScript metodu olan toString() diziyi virgüllerle ayrılmış yazıya çevirir.</b></font></p>
+					<img src="..\assets/dizi15.PNG" width="800" height="300">
+					
+					
+					<p><font face="tahoma" size="4" color="black"><b>join() metodu da tüm diziyi yazıya çevirir.</b></font></p>
+					<p><font face="tahoma" size="4" color="black"><b>toString() metoduna ek olarak ayraç işaretini kendiniz belirleyebilirsiniz.</b></font></p>
+					<img src="..\assets/dizi16.PNG" width="800" height="300">
+					<br>
+					
+					<h2 ><font color="red">Pop ve Push Metodları</font></h2>
+					<p><font face="tahoma" size="4" color="black"><b>Dizilerle çalışırken, yeni eleman eklemek ve olan elemanları çıkarmak çok kolaydır.
+					Pop ve push metodları bu işe yarar: Elemanları diziye sokar veya elemanları diziden çıkarırlar.<b></font></p>
+					
+					<h2 ><font color="red">Pop Metodu</font></h2>
+					<p><font face="tahoma" size="4" color="black"><b>pop() metodu dizideki son elemanı diziden çıkarır:</b></font></p>
+					<img src="..\assets/dizi17.PNG" width="800" height="300">
+					<br>
+					
+					<h2 ><font color="red">Push Metodu</font></h2>
+					<p><font face="tahoma" size="4" color="black"><b>push() metodu dizinin sonuna yeni eleman ekler:</b></font></p>
+					<img src="..\assets/dizi18.PNG" width="800" height="300">
+					<br>
+					
+					<h2 ><font color="red">Shift Metodu</font></h2>
+					<p><font face="tahoma" size="4" color="black"><b>Shift metodu da pop metodu gibidir fakat son elemanı değil ilk elemanı diziden çıkarır.
+					Daha sonra da çıkarılan eleman yerine bütün diziyi çıkarılan 0 index numarasına göre tekrar kaydırır.</b></font></p>
+					<img src="..\assets/dizi19.PNG" width="800" height="300">
+					<br>
+					<p><font face="tahoma" size="4" color="black"><b>unshift() metodu dizinin başına yeni bir eleman ekler ve eski elemanları tekrar kaydırır: <b></font></p>
+				
+					</div>
+				</div>
+			</div>
+</body>
+</html>
